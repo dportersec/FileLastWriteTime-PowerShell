@@ -20,6 +20,7 @@ This script demonstrates how to retrieve and sort file metadata using PowerShell
 ![FileLastWriteTime Example Output](https://github.com/user-attachments/assets/18c2d6a1-90a3-473c-a952-09fbbd6eeda7)
 
 
+
 ## PowerShell Script
 
 ```powershell
@@ -31,3 +32,10 @@ param (
 
 Get-ChildItem -Path $directory -File | Sort-Object LastWriteTime | Select-Object FullName, LastWriteTime
 
+```
+
+
+## Explanation of Key Commands
+- **Get-ChildItem**: Retrieves all files from the specified directory.
+- **Sort-Object**: Sorts the files by their last write time in ascending order.
+- **Select-Object**: Outputs the file name and last write time.
